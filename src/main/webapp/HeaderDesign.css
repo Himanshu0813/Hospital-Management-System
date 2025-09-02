@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+.header-container,
+h1 {
+    background: transparent; /* remove gradient or solid bg */
+    color: white; /* keep text readable */
+    padding: 20px 0; /* optional spacing */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: none; /* remove shadow if it makes rectangle visible */
+}
+     /* ===== Header Styling ===== */
+        .header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #4e54c8, #8f94fb); /* Blue → Violet */
+            color: #fff;
+            padding: 20px 30px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .header-left h1,
+        .header-center h2 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Glow effect */
+        }
+        .header i {
+            margin-right: 10px;
+            color: gold; /* Highlight icons */
+            font-size: 20px;
+        }
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 22px;
+        }
+        .header-right a {
+            text-decoration: none;
+            background: #ff4757;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .header-right a:hover {
+            background: #e84118;
+        }
+    
+
+
+
+
+
+/* Section Title */
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 6px;
+        }

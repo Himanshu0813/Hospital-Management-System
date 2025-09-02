@@ -1,0 +1,86 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Success</title>
+    <link rel="stylesheet" href="HeaderDesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url("LibraryImage2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .success-message {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .back-link {
+            display: block;
+            margin: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            max-width: 200px;
+            transition: 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #1e7e34;
+        }
+
+        @media (max-width: 768px) {
+            .success-message {
+                padding: 15px 20px;
+            }
+
+            .back-link {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== Header ===== -->
+    <div class="header">
+        <div class="header-left">
+            <h1><a href="dashboard.jsp" style="color:white; text-decoration:none;"><i class="fas fa-home"></i> Home</a></h1>
+        </div>
+        <div class="header-center">
+            <h2><i class="fas fa-hospital"></i> Hospital Management System</h2>
+        </div>
+        <div class="header-right">
+            <a href="logoutservlet">Logout</a>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="success-message">
+        <h2>Appointment booked successfully!</h2>
+    </div>
+
+    <!-- Action Links -->
+    <a href="dashboard.jsp" class="back-link">← Back to Dashboard</a>
+    <a href="viewAppointmentsList.jsp" class="back-link">View Appointments List</a>
+</body>
+</html>
